@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>EXPERIMENT trial</title> 
+<!-- RISHAV AWASTHI CSE-24 --> 
+  </head> 
+  <body align="center"> 
+    <form action="" style="border: 2px solid black; width: 500px; height: 520px; align
+items:center;"> 
+      <h1 align="center">Hotel Room Booking Form</h1> 
+      <label for="username">Full Name:</label> 
+      <input type="text" name="username" /> 
+      <br /><br /> 
+      <label for="email">Email:</label> 
+      <input type="email" name="email" /> 
+      <br /><br /> 
+      <label for="phone">Phone Number:</label> 
+      <input type="tel" name="phone" /> 
+      <br /><br /> 
+      <label for="checkin">Check-in Date:</label> 
+      <input type="date" name="checkin" /> 
+      <br /><br /> 
+      <label for="checkout">Check-out Date:</label> 
+      <input type="date" name="checkout" /> 
+      <br /><br /> 
+      <label for="roomtype">Room Type:</label> 
+      <select name="roomtype"> 
+        <option value="single">Single</option> 
+        <option value="double">Double</option> 
+        <option value="suite">Suite</option> 
+      </select> 
+      <br /><br /> 
+      <label for="guests">Number of Guests:</label> 
+      <input type="number" name="guests" min="1" max="10" /> 
+      <br /><br /> 
+      <label align="center" for="text">Special Requests:</label> 
+      <br /> 
+      <textarea name="text" rows="4" cols="50"></textarea> 
+      <br /><br /> 
+      <input type="submit" value="Book Now" /> 
+      <input type="reset" value="Reset" /> 
+    </form> 
+  </body> 
+</html>

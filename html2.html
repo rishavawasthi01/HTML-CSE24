@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShopEase</title>
+<!-- Rishav Awasthi CSE 24 -->
+
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #cfcfcf;
+    }
+
+        nav{
+        background:#000;
+        padding:12px 25px;
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    ul{
+        list-style:none;
+        display:flex;
+        gap:30px;
+        margin:0;
+        padding:0;
+    }
+
+    ul li a{
+        text-decoration:none;
+        color:#fff;
+        font-size:16px;
+    }
+
+    .right{
+        display:flex;
+        gap:20px;
+    }
+
+        .menu-btn{
+        display:none;
+        flex-direction:column;
+        cursor:pointer;
+        gap:5px;
+    }
+    .menu-btn span{
+        width:26px;
+        height:3px;
+        background:white;
+    }
+
+    #check{ display:none; }
+
+        @media(max-width:768px){
+
+        ul, .right{
+            display:none;
+            width:100%;  
+            text-align:center;
+            background:#111;
+            padding:10px 0;
+        }
+
+                #check:checked ~ ul,
+        #check:checked ~ .right{
+            display:block;
+        }
+
+        .menu-btn{
+            display:flex;
+        }
+
+        nav{
+            flex-direction:row;
+        }
+    }
+
+       .content{
+        padding:40px 25px;
+    }
+    .content h1{
+        font-size:34px;
+        margin:0;
+    }
+    .content p{
+        font-size:18px;
+        margin-top:10px;
+    }
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">ShopEase</div>
+
+    <!-- Checkbox Hack for mobile -->
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="right">
+        <a href="#" style="color:white;">Cart 🛒</a>
+        <a href="#" style="color:white;">Login</a>
+    </div>
+</nav>
+
+<div class="content">
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one-stop destination for all shopping needs.</p>
+</div>
+
+</body>
+</html>

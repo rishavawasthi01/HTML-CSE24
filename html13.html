@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPERIMENT 5</title>
+<!-- RISHAV AWASTHI CSE-24 -->
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <hr>
+    <form action="">
+        Full Name:<input type="Name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        Email:<input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        Password:<input type="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />Male
+      <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+        required
+      />Female
+         <input type="radio" id="male" name="gender" value="Other" required />Other
+        <br><br>
+       <label for="course">Course:</label>
+        <select name="course" required>
+            <option value="" disabled selected>Select your course</option>
+            <option value="BCA">BCA</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+        </select>
+        <BR></BR>
+        <label for="phone">Contact No:</label>
+        <input type="tel" name="phone" placeholder="Enter your contact no" required>
+        <BR></BR>
+        <label for="address">Address:</label>
+        <br>
+        <textarea name="address" rows="5" cols="60" placeholder="Enter your address"></textarea>
+        <br><br>
+        <input type="submit" value="Resister">
+        <input type="reset" value="Clear">
+    </form>
+    <hr>
+    <footer align="center">&copy;2025 Student Registration Portal </footer>
+</body>
+</html>
